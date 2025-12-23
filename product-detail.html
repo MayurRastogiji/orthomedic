@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="metaTitle">Orthomedic Product</title>
+  <meta name="description" id="metaDescription" content="" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="product-detail">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Orthomedic home">
+        <h2>Orthomedic</h2>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Mattresses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="tel:+91XXXXXXXXXX" class="btn btn-ghost">Call an Expert</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container product-detail" aria-live="polite">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> › <a href="products.html">Mattresses</a> › <span id="crumbName" aria-current="page">Product</span>
+    </nav>
+
+    <div class="product-top" role="region" aria-labelledby="prodName">
+      <div class="gallery" aria-label="Product image gallery">
+        <div class="main-img" style="display:flex;align-items:center;justify-content:center">
+          <img id="prodImage" src="images/demo.png" alt="Orthomedic product image" />
+        </div>
+
+        <div class="thumbs" id="thumbs" aria-hidden="false">
+          <!-- thumbnails injected by JS; fallback thumbnails -->
+          <img src="images/demo.png" alt="thumbnail 1" />
+          <img src="images/demo.png" alt="thumbnail 2" />
+          <img src="images/demo.png" alt="thumbnail 3" />
+        </div>
+      </div>
+
+      <aside class="product-summary" aria-labelledby="prodName" style="position:relative">
+        <h1 id="prodName">Product Name</h1>
+        <p id="prodShort" class="lead">Short description of this mattress emphasizing benefits and orthopedic suitability.</p>
+
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+          <span class="badge">Medical-grade</span>
+          <span class="badge">Hypoallergenic</span>
+          <span class="badge">Clinically-informed</span>
+        </div>
+
+        <h3 style="margin:.6rem 0 .2rem">Key Features</h3>
+        <ul class="product-features" id="prodFeatures" aria-label="Key features">
+          <!-- filled by JS -->
+          <li>Zoned foam support</li>
+          <li>Breathable knit cover</li>
+          <li>Hypoallergenic core</li>
+        </ul>
+
+        <p class="muted" id="prodIdeal"><strong>Ideal For:</strong> Back pain sufferers, clinics</p>
+
+        <div class="product-actions" style="margin-top:1rem">
+          <a id="whatsappBtn" class="btn btn-primary" href="#" aria-label="Get details on WhatsApp">Get Details</a>
+          <a id="callBtn" class="btn btn-secondary" href="#" aria-label="Call now">Call Now</a>
+        </div>
+
+        <div style="margin-top:1rem" class="small muted">No pricing. For detailed specifications, call or message our experts.</div>
+      </aside>
+    </div>
+
+    <section class="product-info">
+      <h2>Benefits & Details</h2>
+      <p id="prodFull">Full description will be populated here dynamically. Explains construction, intended outcomes and clinical notes.</p>
+
+      <h3 style="margin-top:1rem">Care Instructions</h3>
+      <ul id="prodCare" class="muted-list muted">
+        <li>Spot clean cover</li>
+        <li>Rotate mattress every 2–3 months</li>
+        <li>Use a protector for longevity</li>
+      </ul>
+
+      <h3 style="margin-top:1rem">Benefits</h3>
+      <div class="grid grid-3" style="margin-top:.6rem">
+        <div class="cat-card" style="padding:.9rem">
+          <h4>Spine Support</h4>
+          <p class="small muted">Zoned support maintains neutral alignment and reduces pressure on the lumbar area.</p>
+        </div>
+
+        <div class="cat-card" style="padding:.9rem">
+          <h4>Pressure Relief</h4>
+          <p class="small muted">Comfort layers redistribute pressure for shoulders and hips.</p>
+        </div>
+
+        <div class="cat-card" style="padding:.9rem">
+          <h4>Hygienic Surface</h4>
+          <p class="small muted">Hypoallergenic, easy-care covers suitable for clinical environments.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:1rem">Related Products</h3>
+      <div id="relatedProducts" class="product-grid" style="margin-top:.6rem">
+        <!-- small static related list, replaceable by JS later -->
+        <article class="product-card">
+          <img src="images/demo.png" alt="Related product 1">
+          <div class="card-content">
+            <h4>Orthomedic Ortho Pro</h4>
+            <p class="small muted">Medium-firm with lumber reinforcement.</p>
+            <div class="card-actions">
+              <a href="product-detail.html?id=ortho-pro" class="btn btn-primary">View Details</a>
+              <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%27m%20interested%20in%20Orthomedic%20Ortho%20Pro.%20Please%20share%20details." class="btn btn-ghost">Get Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/demo.png" alt="Related product 2">
+          <div class="card-content">
+            <h4>Orthomedic MemoryFlex</h4>
+            <p class="small muted">Adaptive memory foam for pressure relief.</p>
+            <div class="card-actions">
+              <a href="product-detail.html?id=memoryflex" class="btn btn-primary">View Details</a>
+              <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%27m%20interested%20in%20Orthomedic%20MemoryFlex.%20Please%20share%20details." class="btn btn-ghost">Get Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand-small">Orthomedic</p>
+        <p class="small muted">Medical-grade mattresses & pillows</p>
+      </div>
+
+      <nav class="footer-links">
+        <a href="products.html">Mattresses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="contact">
+        <a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    // small enhancement: keep gallery thumbnails and CTA updated for current product if JS has already populated product details
+    document.addEventListener('DOMContentLoaded', () => {
+      // quick thumbnail fallback interaction
+      document.querySelectorAll('.thumbs img').forEach(img => {
+        img.addEventListener('click', () => {
+          const main = document.getElementById('prodImage');
+          main.src = img.src;
+          main.alt = img.alt || main.alt;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

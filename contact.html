@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Orthomedic</title>
+  <meta name="description" content="Talk to an Orthomedic sleep expert. Call or contact us via WhatsApp.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><h2>Orthomedic</h2></a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Mattresses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container contact-page">
+  <h1>Talk to an Orthomedic Sleep Expert</h1>
+  <p class="lead">Call or message us on WhatsApp for recommendations and product details.</p>
+
+  <div class="grid grid-2 contact-grid">
+    <aside class="contact-info">
+      <h3>Contact</h3>
+      <p><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%27m%20interested%20in%20Orthomedic.%20Please%20share%20details.">Message on WhatsApp</a></p>
+
+      <h4>Business Hours</h4>
+      <p>Mon–Sat: 9:00 AM – 6:00 PM</p>
+    </aside>
+
+    <section>
+      <h3>Send us a message</h3>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="contactName" required>
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" id="contactPhone" required pattern="[0-9+ ]{6,}">
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" id="contactMessage" rows="5" required></textarea>
+        </label>
+
+        <p class="muted">We will respond within one business day.</p>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+
+      <div id="contactNotice" class="notice" aria-live="polite" hidden></div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><p class="brand-small">Orthomedic</p></div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="contact"><a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
